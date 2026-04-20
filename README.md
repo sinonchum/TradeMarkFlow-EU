@@ -6,7 +6,7 @@
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.115+-green)](https://fastapi.tiangolo.com)
 [![LanceDB](https://img.shields.io/badge/LanceDB-0.25+-orange)](https://lancedb.com)
 [![Agno Agent](https://img.shields.io/badge/Agno-2.5+-purple)](https://github.com/agno-agi/agno)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![License: AGPL-3.0](https://img.shields.io/badge/License-AGPL--3.0-green.svg)](LICENSE)
 
 > Intelligent trademark clearance search, risk assessment, and Office Action response drafting — powered by multilingual semantic search and legal-aware AI agents.
 
@@ -314,7 +314,7 @@ pytest tests/
 
 ## 📄 License
 
-MIT License — see [LICENSE](LICENSE) for details.
+AGPL-3.0 — see [LICENSE](LICENSE) for details.
 
 ---
 
