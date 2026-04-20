@@ -1,0 +1,62 @@
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+*.whl
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data directories
+data/lancedb/
+data/pdf/
+data/embedding_cache/
+
+# Temporary files
+*.tmp
+*.log
+
+# Test artifacts
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Node.js (if any)
+node_modules/
+
+# Docker
+docker-compose.override.yml
+
+# Secrets
+*.key
+*.pem
+*.cert
+
+# Large files
+*.zip
+*.tar.gz
+*.rar

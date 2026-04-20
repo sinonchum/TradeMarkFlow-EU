@@ -1,0 +1,53 @@
+[project]
+name = "trademarkflow-eu"
+version = "0.1.0"
+description = "Privacy-first, serverless EUTM clearance & filing assistant"
+requires-python = ">=3.11"
+dependencies = [
+    # Core
+    "fastapi>=0.115",
+    "uvicorn[standard]>=0.34",
+    "pydantic>=2.10",
+
+    # Storage (serverless)
+    "lancedb>=0.20",
+    "pyarrow>=18.0",
+
+    # Agent framework
+    "agno>=2.5",
+
+    # Scraping
+    "crawl4ai>=0.6",
+    "scrapling>=0.4.6",
+
+    # PDF parsing
+    "marker-pdf>=1.0",
+
+    # RAG
+    "lightrag-hku>=1.0",
+
+    # Embeddings (multilingual)
+    "sentence-transformers>=3.0",
+
+    # HTTP
+    "httpx>=0.28",
+]
+
+[project.optional-dependencies]
+local-llm = ["ollama>=0.4"]
+dev = [
+    "pytest>=8.0",
+    "pytest-asyncio>=0.24",
+    "ruff>=0.8",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
